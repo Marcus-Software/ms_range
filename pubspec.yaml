@@ -1,8 +1,8 @@
 name: ms_range
 description: A powerfull lib to creante and compare number ranges
 version: 0.0.1
-author:
-homepage:
+author: Marcus Duarte <marcusedu7@gmail.com>
+homepage: https://github.com/Marcus-Software/ms_range
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
