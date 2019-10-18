@@ -1,6 +1,6 @@
 library ms_range;
 
-import 'dart:math' as Math;
+import 'dart:math' as math;
 
 /// A Range class
 class Range {
@@ -10,8 +10,8 @@ class Range {
   /// [start] number that start a range
   /// [end] number that end a range
   Range(num start, num end)
-      : this.start = Math.min(start, end),
-        this.end = Math.max(start, end);
+      : this.start = math.min(start, end),
+        this.end = math.max(start, end);
 
   /// return true if [numToTest] is major or equal [start] or minor or equal [end]
   bool isInRange(num numToTest) =>
@@ -24,7 +24,9 @@ class Range {
   /// return a Interable for range [start]..[end]
   Iterable<num> get interate sync* {
     num mStart = start;
-    while (mStart <= end) yield mStart++;
+    while (mStart <= end) {
+      yield mStart++;
+    }
   }
 
   /// return a list content [start]..[end]
@@ -32,10 +34,12 @@ class Range {
 
   /// check if other number is in range
   // ignore: hash_and_equals
+  @override
   bool operator ==(Object other) {
     if (other is num) return isInRange(other);
-    if (other is Range)
+    if (other is Range) {
       return other.start == this.start && other.end == this.end;
+    }
     return false;
   }
 
