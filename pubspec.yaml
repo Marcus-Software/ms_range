@@ -1,6 +1,6 @@
 name: ms_range
 description: A powerfull lib to creante ranges and compare if number is in range
-version: 0.1.0
+version: 0.1.1
 author: Marcus Duarte <marcusedu7@gmail.com>
 homepage: https://github.com/Marcus-Software/ms_range
 
