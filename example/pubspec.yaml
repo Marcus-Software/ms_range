@@ -4,5 +4,5 @@ environment:
   sdk: ">=2.0.0 <3.0.0"
 
 dependencies:
-  ms+range:
+  ms_range:
     path: ../
