@@ -6,12 +6,14 @@ import 'dart:math' as math;
 class Range {
   final num start;
   final num end;
+  final num step;
 
   /// [start] number that start a range
   /// [end] number that end a range
-  Range(num start, num end)
+  Range(num start, num end, [num step = 1])
       : this.start = math.min(start, end),
-        this.end = math.max(start, end);
+        this.end = math.max(start, end),
+        this.step = step;
 
   /// return true if [numToTest] is major or equal [start] or minor or equal [end]
   bool isInRange(num numToTest) =>
@@ -25,7 +27,8 @@ class Range {
   Iterable<num> get interate sync* {
     num mStart = start;
     while (mStart <= end) {
-      yield mStart++;
+      yield mStart;
+      mStart += step;
     }
   }
 
