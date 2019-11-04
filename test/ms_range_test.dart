@@ -34,4 +34,14 @@ void main() {
     // ignore: unrelated_type_equality_checks
     expect(range > 250, isFalse);
   });
+
+  test('generate a list with steps [2, 4, 6, 8]', () {
+    final range = Range(2, 8, 2);
+    expect(range.list, [2, 4, 6, 8]);
+  });
+
+  test('generate a list with steps [1, 1.5, 2, 2.5, 3]', () {
+    final range = Range(1, 3, 0.5);
+    expect(range.list, [1, 1.5, 2, 2.5, 3]);
+  });
 }
