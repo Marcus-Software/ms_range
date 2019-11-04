@@ -4,7 +4,7 @@ main() {
   Range range = Range(1, 20);
   print("Print array 1..20");
   print(range.list);
-  
+
   print("\nPrint if value is in range");
   print("100 is between 1..20? ${range.isBetween(100)}");
   print("7 is between 1..20? ${range.isBetween(7)}");
