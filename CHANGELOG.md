@@ -1,3 +1,7 @@
+## [0.2.0] - 10/17/2019
+
+* Generate list with steps
+
 ## [0.1.1] - 10/17/2019
 
 * fix lib name in example
