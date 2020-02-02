@@ -1,3 +1,5 @@
+[![Pub](https://img.shields.io/pub/v/ms_range.svg)](https://pub.dartlang.org/packages/ms_range)
+
 # Overview
 
 A powerfull lib to creante and compare a number in ranges
